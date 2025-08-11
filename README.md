@@ -94,3 +94,8 @@ Result:
 ```bash
 drwx------ 2 user user 4096 Aug 10 12:36 my_folder
 ```
+
+
+##  📚Summary
+
+Conducted a thorough review and adjustment of file and directory permissions within the projects directory to enforce the principle of least privilege and strengthen access controls. Utilized the ls -la command to perform detailed permission audits, then applied chmod commands to remediate permission gaps, reducing potential security risks related to unauthorized access.
