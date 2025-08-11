@@ -54,3 +54,43 @@ Result:
 ```bash
 -rw-rw-r-- 1 user user 1234 Aug 10 12:34 example.txt
 ```
+Now, "other" users can only read but not write.
+
+## 📂 Step 3: Changing Permissions for a Hidden File
+
+![](https://i.imgur.com/hlDxgSy.png)
+
+Hidden files in Linux start with a dot (.). For example: .hiddenfile.
+
+The requirement: Give the owner read/write, group read-only, and remove all permissions for others.
+
+Command used:
+```bash
+chmod u-w,g-w,g+r .hiddenfile
+```
+Verification:
+```bash
+ls -la .hiddenfile
+```
+Result:
+```bash
+-rw-r----- 1 user user 5678 Aug 10 12:35 .hiddenfile
+```
+
+## 🛡️ Step 4: Restricting Directory Access
+The requirement: Allow only the owner to read, write, and execute in the directory. No access for group or others.
+
+![](https://i.imgur.com/WC9TGna.png)
+
+Command used:
+```bash
+chmod g-x my_folder
+```
+Verification:
+```bash
+ls -ld my_folder
+```
+Result:
+```bash
+drwx------ 2 user user 4096 Aug 10 12:36 my_folder
+```
