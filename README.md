@@ -37,8 +37,10 @@ Permission Legend
 | `x`    | Execute permission|
 | `-`    | No permission     |
 
-🔧 Step 2: Removing Write Access for "Other"
+## 🔧 Step 2: Removing Write Access for "Other"
 The requirement: Remove write permissions for anyone not the owner or in the group.
+
+![](https://i.imgur.com/EqfN9Gx.png)
 
 Command used:
 ```bash
