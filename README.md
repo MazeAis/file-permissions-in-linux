@@ -1,4 +1,4 @@
-# 🐧 Linux File Permissions Project
+# 🐧 Linux File Permissions Demonstration
 
 ## 📌 Objective
 The goal of this project was to explore, understand, and modify file and directory permissions in a Linux environment, gaining hands-on experience with permission structures, the `chmod` command, and security best practices.
